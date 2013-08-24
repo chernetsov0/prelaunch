@@ -4,8 +4,6 @@ require "action_controller/railtie"
 
 Bundler.require(*Rails.groups)
 
-require "prelaunch"
-
 module Dummy
   class Application < Rails::Application
 
