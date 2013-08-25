@@ -15,8 +15,8 @@ Gem::Specification.new do |s|
   s.required_ruby_version     = '>= 1.9.3'
   s.required_rubygems_version = '>= 1.8.11'
 
-  s.files      = Dir['{app,config,lib}/**/*', 'Rakefile', 'README.md']
-  s.test_files = Dir["test/**/*"]
+  s.files      = `git ls-files`.split("\n")
+  s.test_files = `git ls-files -- test/*`.split("\n")
 
-  s.add_dependency 'rails', '>= 3.2.6'. '< 5'
+  s.add_dependency 'rails', '>= 3.2.6', '< 5'
 end

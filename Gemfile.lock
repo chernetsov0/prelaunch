@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    prelaunch (0.0.1)
-      rails (~> 4.0.0)
+    prelaunch (0.0.4)
+      rails (>= 3.2.6, < 5)
 
 GEM
   remote: https://rubygems.org/
