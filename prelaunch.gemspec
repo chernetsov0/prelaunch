@@ -6,6 +6,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'prelaunch'
   s.version     = Prelaunch::VERSION
+  s.license     = 'MIT'
   s.authors     = ['Alexey Chernetsov']
   s.email       = ['alexey.chernetsov@forbinde.net']
   s.homepage    = 'http://prelaunch.forbinde.net/'
