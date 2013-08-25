@@ -19,6 +19,8 @@ module Prelaunch
   def self.valid? token
     if @@token.is_a? Proc
       @@token.call token
+    elsif @@token.is_a? Array
+      @@token.include? token
     else
       @@token == token
     end
