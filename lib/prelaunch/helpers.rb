@@ -3,7 +3,7 @@ module Prelaunch
     def prelaunch_logout_link name = nil, html_options = nil, &block
       return unless Prelaunch::valid_env?
 
-      url = "/#{Prelaunch.path}/logout"
+      url = "#{Prelaunch.path}/logout"
 
       html_options = name if block_given?
       html_options ||= {}

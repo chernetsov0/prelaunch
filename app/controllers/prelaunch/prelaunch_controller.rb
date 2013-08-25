@@ -9,7 +9,7 @@ module Prelaunch
     end
 
     def redirect
-      redirect_to Prelaunch.redirect_url || '/'
+      redirect_to '/'
     end
 
     def verify
@@ -25,7 +25,7 @@ module Prelaunch
         session[:prelaunch_token] = nil
       end
 
-      redirect_to Prelaunch.redirect_url || '/'
+      redirect_to '/'
     end
   end
 end
