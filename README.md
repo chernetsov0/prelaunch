@@ -55,7 +55,7 @@ After doing so you can continue to use your app normally.
 
 You can configure path prefix `prelaunch` and token `letmein` in `config/initializers/prelaunch.rb`. You can also pass `Array`, `Proc` or `lambda` instead of `String` to `config.token` for more complex token verification.
 
-To give user ability to end the session and logout on some view add:
+To give user ability to end the session and logout add this piece of code to some view:
 
 ```ruby
 <%= prelaunch_logout_link 'Logout' %>
