@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    prelaunch (0.0.0)
+    prelaunch (0.0.1)
       rails (~> 4.0.0)
 
 GEM
