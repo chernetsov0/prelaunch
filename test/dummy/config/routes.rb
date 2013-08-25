@@ -1,7 +1,7 @@
 Dummy::Application.routes.draw do
-    prelaunch_routes
+  prelaunch_routes
 
-    root to: 'test#index'
+  root to: 'test#index'
 
-    get '/test', to: 'test#index'
+  get '/test', to: 'test#index'
 end
