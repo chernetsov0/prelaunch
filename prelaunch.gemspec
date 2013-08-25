@@ -9,7 +9,6 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.authors     = ['Alexey Chernetsov']
   s.email       = ['alexey.chernetsov@forbinde.net']
-  s.homepage    = 'http://prelaunch.forbinde.net/'
   s.summary     = 'Development environment access restriction Rails plugin.'
   s.description = 'Prelaunch allows you to restrict access to the Rails app while it is still in development.'
 
@@ -19,5 +18,5 @@ Gem::Specification.new do |s|
   s.files      = Dir['{app,config,lib}/**/*', 'Rakefile', 'README.md']
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency 'rails', '~> 4.0.0'
+  s.add_dependency 'rails', '>= 3.2.6'. '< 5'
 end
