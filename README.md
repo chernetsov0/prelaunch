@@ -1,5 +1,7 @@
 ## Prelaunch
 
+[![Gem Version](https://badge.fury.io/rb/prelaunch.png)](http://badge.fury.io/rb/prelaunch)
+
 Prelaunch allows you to restrict access to the Rails app while it is still in development. It supports Rails 3.2.6 and onwards (4 included).
 
 ### Installation
