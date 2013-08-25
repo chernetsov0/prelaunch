@@ -11,10 +11,10 @@ module Prelaunch
   @@token = 'letmein'
 
   mattr_accessor :redirect_url
-  @@redirect_url = '/'
+  @@redirect_url = nil
 
   mattr_accessor :environments
-  @@environments = ['production', 'development']
+  @@environments = ['production']
 
   def self.valid? token
     if @@token.is_a? Proc
