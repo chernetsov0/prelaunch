@@ -27,4 +27,8 @@ module Prelaunch
   def self.valid_env?
     @@environments.include? Rails.env
   end
+
+  def self.setup
+    yield self
+  end
 end
