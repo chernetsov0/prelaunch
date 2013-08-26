@@ -1,6 +1,7 @@
-require 'prelaunch/routing'
-require 'prelaunch/constraint'
 require 'prelaunch/engine'
+require 'prelaunch/functions'
+require 'prelaunch/constraints'
+require 'prelaunch/routing'
 require 'prelaunch/helpers'
 
 module Prelaunch

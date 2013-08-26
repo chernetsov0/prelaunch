@@ -13,9 +13,7 @@ module Prelaunch
     end
 
     def verify
-      if Prelaunch::valid? params[:token]
-        session[:prelaunch_token] = params[:token]
-      end
+      session[:prelaunch_token] = params[:token]
 
       redirect_to '/'
     end
