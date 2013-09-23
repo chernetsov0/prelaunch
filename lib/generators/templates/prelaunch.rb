@@ -1,9 +1,10 @@
 # Use this hook to configure prelaunch
 Prelaunch.setup do |config|
-  # The prefix for prelaunch routes. Prelaunch creates two routes:
-  # * '<path>/:token' for token verification.
-  # * '<path>/logout' for erasing current session.
-  config.path  = 'prelaunch'
+  # Route '<verify_path>/:token' will be used for token verification.
+  config.verify_path  = 'prelaunch'
+
+  # Route '<logout_path>/' will be used for discarding token and logout.
+  config.logout_path  = 'prelaunch/logout'
 
   # The authentication token to use. This could either be a:
   # * String to compare to. You can put it in the ENV so you can change token without redeploy.

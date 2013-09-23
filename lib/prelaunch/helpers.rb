@@ -1,13 +1,12 @@
 module Prelaunch
   module Helpers
-    def prelaunch_logout_link name = nil, html_options = nil, &block
+    def prelaunch_logout_link name = nil, html_options = {}, &block
       return unless Prelaunch::valid_env?
 
-      path = Prelaunch::strip_slashes(Prelaunch.path)
-      url  = "#{path}/logout"
+      path = Prelaunch::strip_slashes(Prelaunch.logout_path)
+      url  = path
 
       html_options = name if block_given?
-      html_options ||= {}
       html_options[:rel] = 'nofollow'
       html_options['href'] ||= url
 

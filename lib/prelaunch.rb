@@ -5,8 +5,11 @@ require 'prelaunch/routing'
 require 'prelaunch/helpers'
 
 module Prelaunch
-  mattr_accessor :path
-  @@path = 'prelaunch'
+  mattr_accessor :verify_path
+  @@verify_path = 'prelaunch'
+
+  mattr_accessor :logout_path
+  @@logout_path = 'prelaunch/logout'
 
   mattr_accessor :token
   @@token = 'letmein'

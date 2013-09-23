@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.version     = Prelaunch::VERSION
   s.license     = 'MIT'
   s.authors     = ['Alexey Chernetsov']
-  s.email       = ['alexey.chernetsov@forbinde.net']
+  s.email       = ['alexey@chernetsov.net']
   s.summary     = 'Development environment access restriction Rails plugin.'
   s.description = 'Prelaunch allows you to restrict access to the Rails app while it is still in development.'
 

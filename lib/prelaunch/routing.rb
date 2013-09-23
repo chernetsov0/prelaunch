@@ -5,8 +5,8 @@ module ActionDispatch::Routing
 
       token = Prelaunch::TokenConstraint.new
 
-      get "#{Prelaunch.path}/logout", to: 'prelaunch/prelaunch#logout', as: ''
-      get "#{Prelaunch.path}/:token", to: 'prelaunch/prelaunch#verify', constraints: token
+      get "#{Prelaunch.logout_path}"       , to: 'prelaunch/prelaunch#logout', as: ''
+      get "#{Prelaunch.verify_path}/:token", to: 'prelaunch/prelaunch#verify', constraints: token
 
       contraint = Prelaunch::SessionConstraint.new
 

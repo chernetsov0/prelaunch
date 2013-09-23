@@ -7,7 +7,7 @@ module Prelaunch
 
   class TokenConstraint
     def matches? request
-      path  = Prelaunch::strip_slashes(Prelaunch.path)
+      path  = Prelaunch::strip_slashes(Prelaunch.verify_path)
       match = request.fullpath.match(/^#{path}\/([A-Za-z0-9]*)([\/\?])?/)
 
       return false if match.nil?
